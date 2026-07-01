@@ -1,19 +1,15 @@
 📈 Churn = 20,4%
-
 🎯 Mejor modelo: Stacking
-
 📊 ROC-AUC: 0.87
-
 👥 Dataset: 10.000 clientes
-
 🤖 Modelos evaluados: 6
-
 # 🏦 Predicción de Churn Bancario
 
 
 > Pipeline End-to-End de Machine Learning para predecir el abandono de clientes y generar recomendaciones estratégicas de negocio.
 
 ---
+
 
 ## 📌 Descripción del proyecto
 
@@ -165,5 +161,3 @@ Finalmente se elaboró un reporte ejecutivo con recomendaciones orientadas a neg
 - Incorpora métricas relevantes para negocio.
 - Presenta recomendaciones accionables para equipos de retención.
 - Desarrollado con un enfoque cercano a un caso de uso real en banca.
-
-# 🏗️ Flujo de trabajo
