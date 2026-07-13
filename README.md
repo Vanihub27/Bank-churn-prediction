@@ -342,5 +342,3 @@ Dra. en Ciencias Biológicas
 📧 **Email:** vaninacavallin@gmail.com
 
 💼 **LinkedIn:** https://linkedin.com/in/vanina-cavallin
-
-💻 **GitHub:** https://github.com/VaninaCavallin
