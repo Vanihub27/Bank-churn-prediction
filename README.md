@@ -1,98 +1,188 @@
-📈 Churn = 20,4%
+# 🏦 Bank Churn Prediction
+### End-to-End Machine Learning Pipeline para la predicción del abandono de clientes bancarios
 
-🎯 Mejor modelo: Stacking
+<p align="center">
 
-📊 ROC-AUC: 0.87
+<!-- Aquí irá el banner -->
 
-👥 Dataset: 10.000 clientes
+<img src="assets/banner_bank_churn.png" width="100%"/>
 
-🤖 Modelos evaluados: 6
+</p>
 
-# 🏦 Predicción de Churn Bancario
+<p align="center">
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-EC6B23?style=for-the-badge)
+![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=for-the-badge)
+![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 
-> Pipeline End-to-End de Machine Learning para predecir el abandono de clientes y generar recomendaciones estratégicas de negocio.
+</p>
 
 ---
 
+# 📊 Resumen del proyecto
 
-## 📌 Descripción del proyecto
+| Indicador | Valor |
+|-----------|------:|
+| 📈 Churn del dataset | 20,4 % |
+| 👥 Clientes analizados | 10.000 |
+| 🤖 Modelos entrenados | 6 |
+| 🏆 Mejor modelo | Stacking |
+| 📊 ROC-AUC | 0.87 |
 
-La pérdida de clientes (*customer churn*) representa uno de los principales desafíos para las entidades financieras, ya que impacta directamente sobre:
+---
 
-- Customer Lifetime Value (CLV)
-- Costos de adquisición y retención
-- Estabilidad de los ingresos
+# 📑 Tabla de contenidos
 
-En este proyecto se desarrolla un pipeline completo de Ciencia de Datos que combina modelos supervisados y no supervisados para predecir el abandono de clientes, comprender sus principales causas y aportar información útil para la toma de decisiones.
+- Caso de negocio
+- Objetivos
+- Dataset
+- Tecnologías utilizadas
+- Metodología
+- Flujo del proyecto
+- Desarrollo
+- Resultados
+- Competencias demostradas
+- Valor agregado
+- Próximas mejoras
+- Autora
 
-El enfoque no estuvo únicamente en obtener un buen modelo predictivo, sino también en traducir los resultados en recomendaciones accionables para el negocio.
+---
+
+# 💼 Caso de negocio
+
+La pérdida de clientes (*customer churn*) representa uno de los principales desafíos para las entidades financieras, ya que impacta directamente en el Customer Lifetime Value (CLV), los costos de adquisición y la rentabilidad del negocio.
+
+El objetivo de este proyecto consiste en desarrollar un pipeline completo de Machine Learning capaz de identificar clientes con alto riesgo de abandono, permitiendo anticipar acciones de retención y optimizar la toma de decisiones comerciales.
 
 ---
 
 # 🎯 Objetivos
 
-- Predecir la probabilidad de abandono de cada cliente.
-- Identificar las variables que más influyen en el churn.
-- Comparar distintos modelos de Machine Learning.
-- Segmentar clientes según su comportamiento.
-- Generar recomendaciones para estrategias de retención.
-
-**Variable objetivo**
-
-**Exited**
-
-- 1 → Cliente abandona el banco.
-- 0 → Cliente permanece.
+- Predecir la probabilidad de abandono de clientes.
+- Comparar diferentes algoritmos de Machine Learning.
+- Identificar las variables con mayor influencia sobre el churn.
+- Segmentar clientes mediante técnicas de aprendizaje no supervisado.
+- Traducir los resultados en recomendaciones accionables para el negocio.
 
 ---
 
-# 📂 Estructura del repositorio
+# 📂 Dataset
 
-| Notebook | Descripción |
-|-----------|-------------|
-| **1_EDA_RegresionLogistica.ipynb** | Análisis exploratorio, limpieza, preprocesamiento y modelo base mediante Regresión Logística. |
-| **2_GradientBoosting_Optimizacion.ipynb** | Implementación de Random Forest, XGBoost, LightGBM, CatBoost y Stacking, junto con la optimización de hiperparámetros. |
-| **3_AprendizajeNoSupervisado.ipynb** | Segmentación de clientes mediante K-Means y análisis de perfiles. |
-| **4_Reporte_Modelos.ipynb** | Comparación de modelos e interpretación de resultados. |
-| **4_Reporte_Modelos2.ipynb** | Consolidación del proyecto y recomendaciones estratégicas para el negocio. |
+**Fuente:** Kaggle – Bank Customer Churn Dataset
+
+Características principales:
+
+- 👥 Registros: 10.000 clientes
+- 📋 Variables: XX
+- 🎯 Variable objetivo: **Exited**
+- Tipo de problema: Clasificación binaria
+
+Variables relevantes:
+
+- Geography
+- Gender
+- Age
+- Balance
+- NumOfProducts
+- IsActiveMember
+- EstimatedSalary
+- CreditScore
+- Tenure
 
 ---
 
-# 📊 Fase 1 – Modelo Base
+# 🛠 Tecnologías utilizadas
 
-## Trabajo realizado
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+- LightGBM
+- CatBoost
+- Git
+- GitHub
+
+---
+
+# 🔄 Metodología
+
+El proyecto fue desarrollado siguiendo la metodología **CRISP-DM**, recorriendo todas las etapas del ciclo de vida de un proyecto de Ciencia de Datos:
+
+- Comprensión del negocio
+- Comprensión de los datos
+- Preparación de los datos
+- Modelado
+- Evaluación
+- Recomendaciones
+
+---
+
+# 🔄 Flujo del proyecto
+
+```mermaid
+flowchart LR
+
+A[Dataset] --> B[Limpieza de datos]
+
+B --> C[EDA]
+
+C --> D[Feature Engineering]
+
+D --> E[Modelos Supervisados]
+
+E --> F[Evaluación]
+
+F --> G[Clustering]
+
+G --> H[Reporte Ejecutivo]
+
+H --> I[Recomendaciones]
+```
+
+---
+
+# 🚀 Desarrollo del proyecto
+
+## 1️⃣ Exploración y preparación de datos
+
+Se realizaron:
 
 - Análisis Exploratorio de Datos (EDA)
+- Limpieza y tratamiento de valores faltantes
 - Ingeniería de variables
 - Escalado
 - Codificación de variables categóricas
-- Regresión Logística
-- Matriz de confusión
-- ROC-AUC
-- PR-AUC
-- Interpretación mediante Odds Ratio
 
 ### Principales hallazgos
 
 - La edad incrementa significativamente el riesgo de abandono.
 - Los clientes de Alemania presentan mayor probabilidad de churn.
-- Un alto balance combinado con baja actividad incrementa el riesgo.
+- Un alto balance combinado con baja actividad aumenta el riesgo.
 - Ser un cliente activo reduce considerablemente la probabilidad de abandono.
 
 ---
 
-# ⚡ Fase 2 – Modelos de Ensamble
+## 2️⃣ Modelado supervisado
 
-## Modelos implementados
+Modelos implementados:
 
+- Logistic Regression
 - Random Forest
 - XGBoost
 - LightGBM
 - CatBoost
 - Stacking Classifier
 
-## Técnicas aplicadas
+Técnicas utilizadas:
 
 - Validación cruzada estratificada
 - GridSearchCV
@@ -101,46 +191,62 @@ El enfoque no estuvo únicamente en obtener un buen modelo predictivo, sino tamb
 - Regularización
 - Feature Importance
 
-### Principales resultados
+---
 
-Los modelos de Gradient Boosting superaron al modelo lineal en capacidad predictiva, mientras que el modelo Stacking permitió combinar las fortalezas de distintos algoritmos.
+## 3️⃣ Segmentación de clientes
+
+Se aplicó K-Means para identificar perfiles de clientes con diferentes características de comportamiento y riesgo de abandono.
+
+La segmentación permitió complementar el modelo predictivo con una visión estratégica para campañas de retención.
 
 ---
 
-# 🔬 Fase 3 – Aprendizaje No Supervisado
+## 4️⃣ Consolidación y recomendaciones
 
-Para complementar la predicción del churn se realizó una segmentación de clientes mediante K-Means.
+Se compararon todos los modelos mediante:
 
-Esta etapa permitió identificar distintos perfiles de clientes y relacionarlos con el riesgo de abandono, aportando una visión más estratégica para el diseño de campañas de retención.
-
----
-
-# 📈 Fase 4 – Consolidación
-
-Se realizó una comparación integral de los modelos desarrollados, evaluando:
-
-- ROC-AUC
-- PR-AUC
+- Accuracy
 - Precision
 - Recall
+- F1-score
+- ROC-AUC
+- PR-AUC
 - Matriz de confusión
-- Umbral de decisión
 
-Finalmente se elaboró un reporte ejecutivo con recomendaciones orientadas a negocio.
+Finalmente se elaboró un reporte ejecutivo con recomendaciones orientadas al negocio.
 
 ---
 
-# 🛠️ Tecnologías utilizadas
+# 📈 Resultados
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- LightGBM
-- CatBoost
-- Matplotlib
-- Seaborn
+| Modelo | Accuracy | ROC-AUC | PR-AUC |
+|---------|---------:|---------:|---------:|
+| Logistic Regression | | | |
+| Random Forest | | | |
+| XGBoost | | | |
+| LightGBM | | | |
+| CatBoost | | | |
+| **Stacking** | **XX** | **0.87** | **XX** |
+
+---
+
+# 📊 Visualizaciones
+
+## Curva ROC
+
+*(Agregar imagen)*
+
+---
+
+## Matriz de confusión
+
+*(Agregar imagen)*
+
+---
+
+## Importancia de variables
+
+*(Agregar imagen)*
 
 ---
 
@@ -152,17 +258,47 @@ Finalmente se elaboró un reporte ejecutivo con recomendaciones orientadas a neg
 - Aprendizaje no supervisado
 - Optimización de hiperparámetros
 - Validación cruzada
-- Interpretación de modelos
+- Interpretabilidad de modelos
 - Segmentación de clientes
 - Storytelling con datos
-- Traducción de métricas técnicas a impacto de negocio
+- Traducción de métricas técnicas a decisiones de negocio
 
 ---
 
-# ⭐ Valor agregado del proyecto
+# ⭐ Valor agregado
 
-- Combina interpretabilidad y desempeño predictivo.
-- Integra modelos supervisados y no supervisados.
-- Incorpora métricas relevantes para negocio.
-- Presenta recomendaciones accionables para equipos de retención.
-- Desarrollado con un enfoque cercano a un caso de uso real en banca.
+✔ Pipeline completo de Ciencia de Datos.
+
+✔ Comparación de seis algoritmos de Machine Learning.
+
+✔ Integración de modelos supervisados y no supervisados.
+
+✔ Interpretación de resultados orientada al negocio.
+
+✔ Desarrollo siguiendo metodología CRISP-DM.
+
+✔ Recomendaciones accionables para estrategias de retención.
+
+---
+
+# 🚀 Próximas mejoras
+
+- Implementación de MLflow para seguimiento de experimentos.
+- Despliegue mediante Streamlit.
+- Automatización del pipeline.
+- Monitoreo del modelo.
+- Entrenamiento continuo.
+
+---
+
+# 👩‍💻 Autora
+
+**Vanina Cavallin**
+
+Dra. en Ciencias Biológicas
+
+Data Scientist | Data Analyst
+
+📧 Email: vaninacavallin@gmail.com
+
+💼 LinkedIn: https://linkedin.com/in/vanina-cavallin
